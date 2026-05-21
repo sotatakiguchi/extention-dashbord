@@ -1,0 +1,14 @@
+[
+    {
+        "name": "ms-python.python",
+        "publisher": "Microsoft",
+        "risk": "Low",
+        "description": "Python開発支援"
+    },
+    {
+        "name": "hediet.vscode-drawio",
+        "publisher": "hediet",
+        "risk": "Medium",
+        "description": "Draw.io編集"
+    }
+]

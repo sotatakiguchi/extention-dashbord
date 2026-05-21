@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>VSCode拡張管理ダッシュボード</h1>
+
+    <input
+    type="text"
+    [(ngModel)]="keyword"
+    (input)="filter()"
+    placeholder="検索"
+    />
+
+    <table>
+        <thead>
+            <tr>
+            <th>拡張名</th>
+            <th>提供元</th>
+            <th>リスク</th>
+            <th>説明</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let ext of filtered">
+                <td>{{ ext.name }}</td>
+                <td>{{ ext.publisher }}</td>
+                <td [ngClass]="ext.risk">{{ ext.risk }}</td>
+                <td>{{ ext.description }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
