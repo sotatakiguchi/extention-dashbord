@@ -28,4 +28,8 @@ export class ExtensionListComponent implements OnInit {
         || e.publisher.toLowerCase().includes(this.keyword.toLowerCase())
     );
     }
+
+    click(): void {
+        this.filter();
+    }
 }
